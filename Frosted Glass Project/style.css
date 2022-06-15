@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    color: rgba(248, 237, 237, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url('new-york-city-night-lights-dunn-ellen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.frosted{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: inherit;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.frosted::after{
+    content: '';
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    
+    background: inherit;
+    position: absolute;
+    filter: blur(8px);
+    z-index: -1;
+}
+

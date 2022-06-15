@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 9, 58);
+    height: 100vh;
+    width: 100%;
+}
+
+.form{
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, .32), -13px -8px 20px 0px rgba(84, 46, 197, .2);
+    height: 60%;
+    width: 70%;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+}
+
+.container .form form input{
+    width: 100%;
+    margin: 20px 0;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+    box-shadow: inset 6px 6px 8px rgba(0, 0, 0, 0.32), inset -7px -7px 14px 0px rgba(84, 56, 197, 0.2);
+}
+
+.container .form form button{
+    cursor: pointer;
+    padding: 10px 50px;
+    margin-top: 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border: none;
+    background: none;
+    box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, .32), -5px -4px 14px 0px rgba(84, 56, 197, 0.2);
+    color: rgba(255, 255, 255, 0.459);
+    border-radius: 5px;
+}
+
+input[type = text], input[type = email], input[type = password]{
+    color: rgba(255, 255, 255, 0.459);
+}
+
+.container .form form button:hover{
+    box-shadow: inset 7px 6px 9px 0px rgba(0, 0, 0, .32), inset -5px -4px 14px 0px rgba(84, 56, 197, 0.2);
+    color: rgba(255, 255, 255, 0.267);
+}
+
+@media only screen and (min-width: 813px){
+    .container .form{
+         width: 50%;
+
+    }
+}
+
+@media only screen and (min-width: 1273px){
+    .container .form{
+         width: 400px;
+         
+    }
+}
+
+@media only screen and (max-width: 593px){
+    .container .form{
+         width: 100%;
+         margin: 0 50px;
+    }
+}
